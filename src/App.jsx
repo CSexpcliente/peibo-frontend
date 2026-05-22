@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import FileUpload from './FileUpload'
+import SearchSimilar from './SearchSimilar'
 
 function App() {
   const [message, setMessage] = useState('Conectando...')
@@ -25,6 +26,7 @@ function App() {
       <p>{loading ? 'Conectando...' : message}</p>
       
       {!loading && <FileUpload />}
+      <SearchSimilar />
     </div>
   )
 }
