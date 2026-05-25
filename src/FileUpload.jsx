@@ -90,7 +90,7 @@ export default function FileUpload() {
       <form onSubmit={handleUpload} style={{ marginBottom: '20px' }}>
         <input
           type="file"
-          accept=".txt"
+          accept=".csv,.xlsx,.xls,.txt"
           onChange={(e) => setFile(e.target.files?.[0] || null)}
           disabled={loading}
           style={{ marginRight: '10px', padding: '8px' }}
