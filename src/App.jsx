@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('https://peibo-backend.onrender.com/')
+   fetch('https://psychic-space-umbrella-jr5wjgw6v9rx25xw-8000.app.github.dev/')
       .then(res => res.json())
       .then(data => {
         setMessage(`✅ Backend conectado`)
