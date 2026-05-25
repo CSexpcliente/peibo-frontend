@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import FileUpload from './FileUpload'
 import SearchSimilar from './SearchSimilar'
+import ExportButton from './components/ExportButton.jsx'
 
 function App() {
   const [message, setMessage] = useState('Conectando...')
@@ -27,6 +28,7 @@ function App() {
       
       {!loading && <FileUpload />}
       <SearchSimilar />
+      <ExportButton analysisData={{theme: "Coverage", metrics: {}}} />
     </div>
   )
 }
